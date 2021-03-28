@@ -1895,9 +1895,9 @@ class AboutTab extends StatelessWidget {
             child: Stack(
               children: <Widget>[
                 Container(
-
                   alignment: Alignment.center,
-                  child: new Image.asset('assets/About1_WaterBackground.webp', width: 600),
+                  child: new Image.asset('assets/About1_WaterBackground.webp',
+                      width: 600),
                 ),
                 Column(
                   children: <Widget>[
@@ -1907,16 +1907,16 @@ class AboutTab extends StatelessWidget {
                       child: const Text(
                         'WATER MOVEMENT',
                         textAlign: TextAlign.center,
-                        style: TextStyle(
-                          fontSize: 50,
-                          color: Colors.white
-                        ),
+                        style: TextStyle(fontSize: 50, color: Colors.white),
                       ),
                     ),
                   ],
                 ),
               ],
             ),
+          ),
+          Container(
+            padding: const EdgeInsets.all(20),
           ),
           Column(
             crossAxisAlignment: CrossAxisAlignment.start,
@@ -2054,6 +2054,188 @@ class AboutTab extends StatelessWidget {
               ),
             ],
           ),
+          Container(
+            padding: const EdgeInsets.all(20),
+          ),
+          Container(
+            padding: const EdgeInsets.all(4),
+            child: Center(
+              child: Text(
+                'Our Partners',
+                textAlign: TextAlign.center,
+                style: TextStyle(
+                  fontSize: 20,
+                  fontWeight: FontWeight.bold,
+                ),
+              ),
+            ),
+          ),
+          Row(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: <Widget>[
+              Container(
+                padding: const EdgeInsets.all(10),
+                child: Center(
+                  child: new Image.asset('assets/partner1.webp', height: 80),
+                ),
+              ),
+              Container(
+                padding: const EdgeInsets.all(10),
+                child: Center(
+                  child: new Image.asset('assets/partner2.webp', height: 80),
+                ),
+              ),
+              Container(
+                padding: const EdgeInsets.all(10),
+                child: Center(
+                  child: new Image.asset('assets/partner3.webp', height: 80),
+                ),
+              ),
+              Container(
+                padding: const EdgeInsets.all(10),
+                child: Center(
+                  child: new Image.asset('assets/partner4.webp', height: 80),
+                ),
+              ),
+            ],
+          ),
+          Row(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: <Widget>[
+              Expanded(
+                flex: 1,
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: <Widget>[
+                    Container(
+                      padding: const EdgeInsets.all(4),
+                      child: Center(
+                        child: Text(
+                          'BLUME CREATIVE AGENCY',
+                          textAlign: TextAlign.center,
+                          style: TextStyle(
+                            fontSize: 12.5,
+                            fontWeight: FontWeight.bold,
+                          ),
+                        ),
+                      ),
+                    ),
+                    Container(
+                      padding: const EdgeInsets.all(4),
+                      child: Center(
+                        child: Text(
+                          'Videographer and editor for Water Movement Documentary',
+                          textAlign: TextAlign.center,
+                          style: TextStyle(
+                            fontSize: 12,
+                          ),
+                        ),
+                      ),
+                    ),
+                  ],
+                ),
+              ),
+              Expanded(
+                flex: 1,
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: <Widget>[
+                    Container(
+                      padding: const EdgeInsets.all(4),
+                      child: Center(
+                        child: Text(
+                          'BEN GRAYZEL',
+                          textAlign: TextAlign.center,
+                          style: TextStyle(
+                            fontSize: 12.5,
+                            fontWeight: FontWeight.bold,
+                          ),
+                        ),
+                      ),
+                    ),
+                    Container(
+                      padding: const EdgeInsets.all(4),
+                      child: Center(
+                        child: Text(
+                          'Videographer for Video Learning Library',
+                          textAlign: TextAlign.center,
+                          style: TextStyle(
+                            fontSize: 12,
+                          ),
+                        ),
+                      ),
+                    ),
+                  ],
+                ),
+              ),
+              Expanded(
+                flex: 1,
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: <Widget>[
+                    Container(
+                      padding: const EdgeInsets.all(4),
+                      child: Center(
+                        child: Text(
+                          'ODE TO LIGHT PHOTOGRAPY',
+                          textAlign: TextAlign.center,
+                          style: TextStyle(
+                            fontSize: 12.5,
+                            fontWeight: FontWeight.bold,
+                          ),
+                        ),
+                      ),
+                    ),
+                    Container(
+                      padding: const EdgeInsets.all(4),
+                      child: Center(
+                        child: Text(
+                          'Videographer for Video Learning Library',
+                          textAlign: TextAlign.center,
+                          style: TextStyle(
+                            fontSize: 12,
+                          ),
+                        ),
+                      ),
+                    ),
+                  ],
+                ),
+              ),
+              Expanded(
+                flex: 1,
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: <Widget>[
+                    Container(
+                      padding: const EdgeInsets.all(4),
+                      child: Center(
+                        child: Text(
+                          'RAWD ALMASOUD',
+                          textAlign: TextAlign.center,
+                          style: TextStyle(
+                            fontSize: 12.5,
+                            fontWeight: FontWeight.bold,
+                          ),
+                        ),
+                      ),
+                    ),
+                    Container(
+                      padding: const EdgeInsets.all(4),
+                      child: Center(
+                        child: Text(
+                          'Videographer and Editor for Video Learning Library',
+                          textAlign: TextAlign.center,
+                          style: TextStyle(
+                            fontSize: 12,
+                          ),
+                        ),
+                      ),
+                    ),
+                  ],
+                ),
+              ),
+            ],
+          )
         ],
       ),
     );
