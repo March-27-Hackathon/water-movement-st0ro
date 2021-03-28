@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
 
-void main() => runApp(HomeScreen());
+void main() => runApp(WaterMovement());
 
-class HomeScreen extends StatefulWidget {
+class WaterMovement extends StatefulWidget {
   @override
-  _HomeScreenPage createState() => _HomeScreenPage();
+  _WaterMovementPage createState() => _WaterMovementPage();
 }
 
-class _HomeScreenPage extends State<HomeScreen>
+class _WaterMovementPage extends State<WaterMovement>
     with SingleTickerProviderStateMixin {
   TabController tabController;
 
@@ -159,7 +159,21 @@ class VideoTab extends StatelessWidget{
   Widget build(BuildContext context) {
     return Container(
       child: Center(
-        child: Text("Videos here."),
+        child: ListView(
+          padding: const EdgeInsets.all(8),
+          children: <Widget>[
+            Container(
+              height: 50,
+              //color: Colors.amber[100],
+              child: const Center(child: Text('Video 1')),
+            ),
+            Container(
+              height: 50,
+              //color: Colors.amber[100],
+              child: const Center(child: Text('End of videos')),
+            ),
+          ],
+        )
       ),
     );
   }
