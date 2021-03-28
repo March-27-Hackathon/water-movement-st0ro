@@ -1,3 +1,5 @@
+import 'dart:ui';
+
 import 'package:flutter/material.dart';
 
 void main() => runApp(WaterMovement());
@@ -707,7 +709,163 @@ class YouthTab extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       child: Center(
-        child: Text("Youth stuffs here."),
+        child: ListView(
+            padding: const EdgeInsets.all(12),
+            children: <Widget>[
+              Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: <Widget>[
+                    Container(
+                        padding: const EdgeInsets.all(4),
+                        child: Center(
+                            child: Text('Virtual Workshops',
+                              textAlign: TextAlign.center,
+                              style: TextStyle(
+                                fontSize: 20,
+                                fontWeight: FontWeight.bold,
+                              ),)
+                        ),
+                    ),
+                    Container(
+                      padding: const EdgeInsets.all(4),
+                      child: Center (
+                        child: new Image.asset('assets/youthpic1.webp'),
+                      ),
+                    ),
+                    Container(
+                      padding: const EdgeInsets.all(4),
+                      child: Center(
+                          child: Text('Free! Teachers book today!',
+                            textAlign: TextAlign.center,
+                            style: TextStyle(
+                              fontSize: 15,
+                              fontWeight: FontWeight.bold,
+                            ),)
+                      ),
+                    ),
+                    Container(
+                      padding: const EdgeInsets.all(4),
+                      child: Center(
+                          child: Text('Online workshop for students of all ages. Learn about water in Canada, careers in Engineering and the water sector and create your own edible water pods! Free experiment kit delivery to your Calgary school.',
+                          textAlign: TextAlign.center,)
+                      ),
+                    ),
+                    Container(
+                      padding: const EdgeInsets.all(4),
+                      child: Center(
+                        child: ElevatedButton(
+                          onPressed: (){},
+                          style: ElevatedButton.styleFrom(elevation: 10),
+                          child: Text('Contact us')
+                        ),
+                      ),
+                    )
+                  ]
+              ),
+              const Divider(),
+              Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: <Widget>[
+                    Container(
+                      padding: const EdgeInsets.all(4),
+                      child: Center(
+                          child: Text('Virtual Lunch & Learn',
+                            textAlign: TextAlign.center,
+                            style: TextStyle(
+                              fontSize: 20,
+                              fontWeight: FontWeight.bold,
+                            ),)
+                      ),
+                    ),
+                    Container(
+                      padding: const EdgeInsets.all(4),
+                      child: Center (
+                        child: new Image.asset('assets/youthpic2.webp'),
+                      ),
+                    ),
+                    Container(
+                      padding: const EdgeInsets.all(4),
+                      child: Center(
+                          child: Text('Free! Teachers book today!',
+                            textAlign: TextAlign.center,
+                            style: TextStyle(
+                              fontSize: 15,
+                              fontWeight: FontWeight.bold,
+                            ),)
+                      ),
+                    ),
+                    Container(
+                      padding: const EdgeInsets.all(4),
+                      child: Center(
+                          child: Text('Careers in the water sector are growing more than ever. Do your students know what opportunities there are in the water industry? Sign up for a lunch and learn session with any of our Water Engineers.',
+                            textAlign: TextAlign.center,)
+                      ),
+                    ),
+                    Container(
+                      padding: const EdgeInsets.all(4),
+                      child: Center(
+                        child: ElevatedButton(
+                            onPressed: (){},
+                            style: ElevatedButton.styleFrom(elevation: 10),
+                            child: Text('Contact us')
+                        ),
+                      ),
+                    )
+                  ]
+              ),
+              const Divider(),
+              Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: <Widget>[
+                    Container(
+                      padding: const EdgeInsets.all(4),
+                      child: Center(
+                          child: Text('Wastewater Treatment Plant Tour',
+                            textAlign: TextAlign.center,
+                            style: TextStyle(
+                              fontSize: 20,
+                              fontWeight: FontWeight.bold,
+                            ),)
+                      ),
+                    ),
+                    Container(
+                      padding: const EdgeInsets.all(4),
+                      child: Center (
+                        child: new Image.asset('assets/youthpic3.webp'),
+                      ),
+                    ),
+                    Container(
+                      padding: const EdgeInsets.all(4),
+                      child: Center(
+                          child: Text('Check back at a later date',
+                            textAlign: TextAlign.center,
+                            style: TextStyle(
+                              fontSize: 15,
+                              fontWeight: FontWeight.bold,
+                            ),)
+                      ),
+                    ),
+                    Container(
+                      padding: const EdgeInsets.all(4),
+                      child: Center(
+                          child: Text('We help facilitate and organize wastewater treatment plant tours. Currently, this program is on-hold due to COVID restrictions. Contact us to express your interest in a tour at a later date.',
+                            textAlign: TextAlign.center,)
+                      ),
+                    ),
+                    Container(
+                      padding: const EdgeInsets.all(4),
+                      child: Center(
+                        child: ElevatedButton(
+                            onPressed: (){},
+                            style: ElevatedButton.styleFrom(elevation: 10),
+                            child: Text('Contact us')
+                        ),
+                      ),
+                    )
+                  ]
+              ),
+            ]
+        )
       ),
     );
   }
