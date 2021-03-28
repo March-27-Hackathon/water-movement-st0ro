@@ -11,7 +11,7 @@ class _WaterMovementPage extends State<WaterMovement>
     with SingleTickerProviderStateMixin {
   TabController tabController;
 
-  String title = "Water Movement";
+  String title = "Video Library";
 
   @override
   void initState() {
@@ -154,33 +154,75 @@ class ForumTabState extends State<ForumTab>
   }
 }
 
-class VideoTab extends StatelessWidget{
+class VideoTab extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      child: Center(
-        child: ListView(
-          padding: const EdgeInsets.all(8),
-          children: <Widget>[
-            Container(
-              height: 50,
-              //color: Colors.amber[100],
-              child: const Center(child: Text('Video 1')),
-            ),
-            Container(
-              height: 50,
-              //color: Colors.amber[100],
-              child: const Center(child: Text('End of videos')),
-            ),
-          ],
-        )
+      child: ListView(
+        padding: const EdgeInsets.all(12),
+        children: <Widget>[
+          Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: <Widget>[
+              const Text(
+                'Slow Sand Filtration & Filter Scrape',
+                style: TextStyle(
+                  fontSize: 20,
+                  fontWeight: FontWeight.bold,
+                ),
+              ),
+              Container(
+                padding: const EdgeInsets.all(8),
+                child: new Image.asset('assets/vid1.jpg'),
+              ),
+              const Center(child: Text('Video 1')),
+            ],
+          ),
+          Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: <Widget>[
+              const Text(
+                'Slow Sand Filtration & Filter Scrape',
+                style: TextStyle(
+                  fontSize: 20,
+                  fontWeight: FontWeight.bold,
+                ),
+              ),
+              Container(
+                padding: const EdgeInsets.all(8),
+                child: new Image.asset('assets/vid1.jpg'),
+              ),
+              const Center(child: Text('Video 1')),
+            ],
+          ),
+          Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: <Widget>[
+              const Text(
+                'Slow Sand Filtration & Filter Scrape',
+                style: TextStyle(
+                  fontSize: 20,
+                  fontWeight: FontWeight.bold,
+                ),
+              ),
+              Container(
+                padding: const EdgeInsets.all(8),
+                child: new Image.asset('assets/vid1.jpg'),
+              ),
+              const Center(child: Text('Video 1')),
+            ],
+          ),
+          Container(
+            height: 50,
+            child: const Center(child: Text('End of videos')),
+          ),
+        ],
       ),
     );
   }
-  
 }
 
-class YouthTab extends StatelessWidget{
+class YouthTab extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
@@ -189,10 +231,9 @@ class YouthTab extends StatelessWidget{
       ),
     );
   }
-
 }
 
-class AboutTab extends StatelessWidget{
+class AboutTab extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
@@ -201,5 +242,4 @@ class AboutTab extends StatelessWidget{
       ),
     );
   }
-
 }
