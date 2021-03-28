@@ -1,6 +1,7 @@
 import 'dart:ui';
 
 import 'package:flutter/material.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 void main() => runApp(WaterMovement());
 
@@ -1928,7 +1929,7 @@ class AboutTab extends StatelessWidget {
                     'Our Mission',
                     textAlign: TextAlign.center,
                     style: TextStyle(
-                      fontSize: 20,
+                      fontSize: 30,
                       fontWeight: FontWeight.bold,
                     ),
                   ),
@@ -1957,7 +1958,7 @@ class AboutTab extends StatelessWidget {
                     'Our Vision',
                     textAlign: TextAlign.center,
                     style: TextStyle(
-                      fontSize: 20,
+                      fontSize: 30,
                       fontWeight: FontWeight.bold,
                     ),
                   ),
@@ -1991,7 +1992,7 @@ class AboutTab extends StatelessWidget {
                     'Who we are',
                     textAlign: TextAlign.center,
                     style: TextStyle(
-                      fontSize: 20,
+                      fontSize: 30,
                       fontWeight: FontWeight.bold,
                     ),
                   ),
@@ -2049,6 +2050,29 @@ class AboutTab extends StatelessWidget {
                       fontSize: 15,
                       fontWeight: FontWeight.bold,
                     ),
+                  ),
+                ),
+              ),
+              Container(
+                padding: const EdgeInsets.all(4),
+                child: Center(
+                  child: Text(
+                    'Contact Us',
+                    textAlign: TextAlign.center,
+                    style: TextStyle(
+                      fontSize: 30,
+                      fontWeight: FontWeight.bold,
+                    ),
+                  ),
+                ),
+              ),
+
+              Container(
+                padding: const EdgeInsets.all(4),
+                child: Center(
+                  child: new InkWell(
+                    child: new Text('watermovementyyc@gmail.com'),
+                        onTap: () => launch('youtube.com')
                   ),
                 ),
               ),
