@@ -31,7 +31,7 @@ class _WaterMovementPage extends State<WaterMovement>
   Widget build(BuildContext context) {
     return MaterialApp(
         theme: ThemeData(
-          primarySwatch: Colors.cyan,
+          primarySwatch: Colors.blue,
         ),
         darkTheme: ThemeData(
           brightness: Brightness.dark,
@@ -129,26 +129,403 @@ class ForumTabState extends State<ForumTab>
             child: new TabBar(
               indicatorColor: Colors.blue,
               unselectedLabelColor: Colors.grey,
-              labelColor: Colors.blue,
+              labelColor: Colors.white,
               tabs: [
-                Tab(
-                  text: "ASK",
-                ),
-                Tab(
-                  text: "LESSONS",
-                ),
-                Tab(
-                  text: "SPOTLIGHTS",
-                ),
+                Tab(text: "ASK"),
+                Tab(text: "LESSONS"),
+                Tab(text: "SPOTLIGHTS"),
               ],
             ),
           ),
         ),
         body: TabBarView(
           children: [
-            Text("TAB ONE CONTENT"),
-            Text("TAB TWO CONTENT"),
-            Text("TAB THREE CONTENT"),
+            ListView(
+              padding: const EdgeInsets.all(12),
+              children: [
+                Row(
+                  children: [
+                    Container(
+                      alignment: Alignment.topCenter,
+                      padding: const EdgeInsets.all(4),
+                      child:
+                        Image.asset("assets/prof1.png", height: 50),
+                    ),
+                    Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        RichText(
+                          text: TextSpan(
+                              text: 'Tejus Gangadharaiah',
+                              style: TextStyle(
+                                fontSize: 18,
+                                fontWeight: FontWeight.bold,
+                              ),
+                              children: <TextSpan>[
+                                TextSpan(
+                                    text: " joined the group.",
+                                    style: TextStyle(
+                                        fontWeight: FontWeight.normal)),
+                              ]),
+                        ),
+                        Text("14 hours ago"),
+                        Row(
+                          children: <Widget>[
+                            Container(
+                              padding: const EdgeInsets.all(4),
+                              child: Icon(Icons.favorite_border),
+                            ),
+                            Container(
+                              padding: const EdgeInsets.all(4),
+                              child: Icon(Icons.chat_bubble_outline),
+                            ),
+                            Container(
+                              padding: const EdgeInsets.all(4),
+                              child: Text("0"),
+                            ),
+                          ],
+                        ),
+                      ],
+                    ),
+                  ],
+                ),
+                Divider(),
+                Row(
+                  children: [
+                    Container(
+                      padding: const EdgeInsets.all(4),
+                      child:
+                      Image.asset("assets/prof2.jpg", height: 50),
+                    ),
+                    Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        RichText(
+                          text: TextSpan(
+                              text: 'Farshad Sh',
+                              style: TextStyle(
+                                fontSize: 18,
+                                fontWeight: FontWeight.bold,
+                              ),
+                              children: <TextSpan>[
+                                TextSpan(
+                                    text: " joined the group.",
+                                    style: TextStyle(
+                                        fontWeight: FontWeight.normal)),
+                              ]),
+                        ),
+                        Text("14 hours ago"),
+                        Row(
+                          children: <Widget>[
+                            Container(
+                              padding: const EdgeInsets.all(4),
+                              child: Icon(Icons.favorite_border),
+                            ),
+                            Container(
+                              padding: const EdgeInsets.all(4),
+                              child: Icon(Icons.chat_bubble_outline),
+                            ),
+                            Container(
+                              padding: const EdgeInsets.all(4),
+                              child: Text("0"),
+                            ),
+                          ],
+                        ),
+                      ],
+                    ),
+                  ],
+                ),
+                Divider(),
+                Row(
+                  children: [
+                    Container(
+                      padding: const EdgeInsets.all(4),
+                      child:
+                      Image.asset("assets/prof3.jpg", height: 50),
+                    ),
+                    Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        RichText(
+                          text: TextSpan(
+                              text: 'kondwani.asefa',
+                              style: TextStyle(
+                                fontSize: 18,
+                                fontWeight: FontWeight.bold,
+                              ),
+                              children: <TextSpan>[
+                                TextSpan(
+                                    text: " joined the group.",
+                                    style: TextStyle(
+                                        fontWeight: FontWeight.normal)),
+                              ]),
+                        ),
+                        Text("14 hours ago"),
+                        Row(
+                          children: <Widget>[
+                            Container(
+                              padding: const EdgeInsets.all(4),
+                              child: Icon(Icons.favorite_border),
+                            ),
+                            Container(
+                              padding: const EdgeInsets.all(4),
+                              child: Icon(Icons.chat_bubble_outline),
+                            ),
+                            Container(
+                              padding: const EdgeInsets.all(4),
+                              child: Text("0"),
+                            ),
+                          ],
+                        ),
+                      ],
+                    ),
+                  ],
+                ),
+                Divider(),
+                Row(
+                  children: [
+                    Container(
+                      padding: const EdgeInsets.all(4),
+                      child:
+                      Image.asset("assets/prof2.jpg", height: 50),
+                    ),
+                    Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        RichText(
+                          text: TextSpan(
+                              text: 'rajpreet.gill',
+                              style: TextStyle(
+                                fontSize: 18,
+                                fontWeight: FontWeight.bold,
+                              ),
+                              children: <TextSpan>[
+                                TextSpan(
+                                    text: " joined the group ",
+                                    style: TextStyle(
+                                        fontWeight: FontWeight.normal),
+                                ),
+                                TextSpan(
+                                  text: "with \nbmalekia.",
+                                ),
+                              ]),
+                        ),
+                        Text("2 months ago"),
+                        Row(
+                          children: <Widget>[
+                            Container(
+                              padding: const EdgeInsets.all(4),
+                              child: Icon(Icons.favorite_border),
+                            ),
+                            Container(
+                              padding: const EdgeInsets.all(4),
+                              child: Icon(Icons.chat_bubble_outline),
+                            ),
+                            Container(
+                              padding: const EdgeInsets.all(4),
+                              child: Text("1"),
+                            ),
+                          ],
+                        ),
+                      ],
+                    ),
+                  ],
+                ),
+                Divider(),
+                Row(
+                  children: [
+                    Container(
+                      padding: const EdgeInsets.all(4),
+                      child:
+                      Image.asset("assets/prof2.jpg", height: 50),
+                    ),
+                    Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        RichText(
+                          text: TextSpan(
+                              text: 'kenward13',
+                              style: TextStyle(
+                                fontSize: 18,
+                                fontWeight: FontWeight.bold,
+                              ),
+                              children: <TextSpan>[
+                                TextSpan(
+                                  text: " joined the group ",
+                                  style: TextStyle(
+                                      fontWeight: FontWeight.normal),
+                                ),
+                              ]),
+                        ),
+                        Text("2 months ago"),
+                        Row(
+                          children: <Widget>[
+                            Container(
+                              padding: const EdgeInsets.all(4),
+                              child: Icon(Icons.favorite_border),
+                            ),
+                            Container(
+                              padding: const EdgeInsets.all(4),
+                              child: Icon(Icons.chat_bubble_outline),
+                            ),
+                            Container(
+                              padding: const EdgeInsets.all(4),
+                              child: Text("1"),
+                            ),
+                          ],
+                        ),
+                      ],
+                    ),
+                  ],
+                ),
+                Divider(),
+                Row(
+                  children: [
+                    Container(
+                      padding: const EdgeInsets.all(4),
+                      child:
+                      Image.asset("assets/prof2.jpg", height: 50),
+                    ),
+                    Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        RichText(
+                          text: TextSpan(
+                              text: 'saba.bhatti1',
+                              style: TextStyle(
+                                fontSize: 18,
+                                fontWeight: FontWeight.bold,
+                              ),
+                          ),
+                        ),
+                        Text("3 months ago"),
+                        Text("This is an awesome page!! In terms of water\ntreatment, what are the most effective methods\nand is Calgary currently employing those methods\nor does it depend on different factors?"),
+                        Row(
+                          children: <Widget>[
+                            Container(
+                              padding: const EdgeInsets.all(4),
+                              child: Icon(Icons.favorite_border),
+                            ),
+                            Container(
+                              padding: const EdgeInsets.all(4),
+                              child: Icon(Icons.chat_bubble_outline),
+                            ),
+                            Container(
+                              padding: const EdgeInsets.all(4),
+                              child: Text("0"),
+                            ),
+                          ],
+                        ),
+                      ],
+                    ),
+                  ],
+                ),
+                Divider(),
+                Row(
+                  children: [
+                    Container(
+                      padding: const EdgeInsets.all(4),
+                      child:
+                      Image.asset("assets/prof2.jpg", height: 50),
+                    ),
+                    Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        RichText(
+                          text: TextSpan(
+                              text: 'saba.bhatti3',
+                              style: TextStyle(
+                                fontSize: 18,
+                                fontWeight: FontWeight.bold,
+                              ),
+                              children: <TextSpan>[
+                                TextSpan(
+                                  text: " joined the group ",
+                                  style: TextStyle(
+                                      fontWeight: FontWeight.normal),
+                                ),
+                              ]),
+                        ),
+                        Text("3 months ago"),
+                        Row(
+                          children: <Widget>[
+                            Container(
+                              padding: const EdgeInsets.all(4),
+                              child: Icon(Icons.favorite_border),
+                            ),
+                            Container(
+                              padding: const EdgeInsets.all(4),
+                              child: Icon(Icons.chat_bubble_outline),
+                            ),
+                            Container(
+                              padding: const EdgeInsets.all(4),
+                              child: Text("0"),
+                            ),
+                          ],
+                        ),
+                      ],
+                    ),
+                  ],
+                ),
+                Divider(),
+                Row(
+                  children: [
+                    Container(
+                      padding: const EdgeInsets.all(4),
+                      child:
+                      Image.asset("assets/prof2.jpg", height: 50),
+                    ),
+                    Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        RichText(
+                          text: TextSpan(
+                              text: 'rajpreet.gill',
+                              style: TextStyle(
+                                fontSize: 18,
+                                fontWeight: FontWeight.bold,
+                              ),
+                          ),
+                        ),
+                        Text("3 months ago"),
+                        Text("This is indeed a very spectacular way to make a\nreal impact, thank you for setting this up. I had a\nquestion regarding water treatments; what are\nsome current methods that are being utilized\nin order to perform treatments on water? As well,\nwhat do these treatments look like?  What are\nsome of the materials that are being used for\ntreatments in water? \nThank you!"),
+                        Row(
+                          children: <Widget>[
+                            Container(
+                              padding: const EdgeInsets.all(4),
+                              child: Icon(Icons.favorite_border),
+                            ),
+                            Container(
+                              padding: const EdgeInsets.all(4),
+                              child: Icon(Icons.chat_bubble_outline),
+                            ),
+                            Container(
+                              padding: const EdgeInsets.all(4),
+                              child: Text("0"),
+                            ),
+                          ],
+                        ),
+                      ],
+                    ),
+                  ],
+                ),
+                Divider(),
+              ],
+            ),
+            ListView(
+              padding: const EdgeInsets.all(12),
+              children: [
+                Text("uwu"),
+                Text("text"),
+              ],
+            ),
+            ListView(
+              padding: const EdgeInsets.all(12),
+              children: [
+                Text("uwu"),
+                Text("text"),
+              ],
+            ),
           ],
         ),
       ),
@@ -180,8 +557,8 @@ class VideoTab extends StatelessWidget {
               Row(
                 children: <Widget>[
                   Container(
-                      padding: const EdgeInsets.all(4),
-                      child: Icon(Icons.favorite_border),
+                    padding: const EdgeInsets.all(4),
+                    child: Icon(Icons.favorite_border),
                   ),
                   Container(
                     padding: const EdgeInsets.all(4),
@@ -189,7 +566,7 @@ class VideoTab extends StatelessWidget {
                   ),
                   Container(
                     padding: const EdgeInsets.all(4),
-                    child:Icon(Icons.chat_bubble_outline),
+                    child: Icon(Icons.chat_bubble_outline),
                   ),
                   Container(
                     padding: const EdgeInsets.all(4),
@@ -212,16 +589,13 @@ class VideoTab extends StatelessWidget {
               ),
               Container(
                 padding: const EdgeInsets.all(4),
-                child: const Center(child: Text('What does Schmutzdecke mean? How often should we perform a filter scrape? Watch expert Indigenous Water Treatment Operator Warren Brown to find out!')),
+                child: const Center(
+                    child: Text(
+                        'What does Schmutzdecke mean? How often should we perform a filter scrape? Watch expert Indigenous Water Treatment Operator Warren Brown to find out!')),
               ),
             ],
           ), //1
-          const Divider(
-            height: 20,
-            thickness: 2,
-            indent: 20,
-            endIndent: 20,
-          ),
+          const Divider(),
           Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: <Widget>[
@@ -248,7 +622,7 @@ class VideoTab extends StatelessWidget {
                   ),
                   Container(
                     padding: const EdgeInsets.all(4),
-                    child:Icon(Icons.chat_bubble_outline),
+                    child: Icon(Icons.chat_bubble_outline),
                   ),
                   Container(
                     padding: const EdgeInsets.all(4),
@@ -271,16 +645,13 @@ class VideoTab extends StatelessWidget {
               ),
               Container(
                 padding: const EdgeInsets.all(4),
-                child: const Center(child: Text('Coming soon! Life hacks with Warren! Watch to find out how to make a homemade water filter.')),
+                child: const Center(
+                    child: Text(
+                        'Coming soon! Life hacks with Warren! Watch to find out how to make a homemade water filter.')),
               ),
             ],
           ), //2
-          const Divider(
-            height: 20,
-            thickness: 2,
-            indent: 20,
-            endIndent: 20,
-          ),
+          const Divider(),
           Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: <Widget>[
@@ -307,7 +678,7 @@ class VideoTab extends StatelessWidget {
                   ),
                   Container(
                     padding: const EdgeInsets.all(4),
-                    child:Icon(Icons.chat_bubble_outline),
+                    child: Icon(Icons.chat_bubble_outline),
                   ),
                   Container(
                     padding: const EdgeInsets.all(4),
@@ -330,16 +701,13 @@ class VideoTab extends StatelessWidget {
               ),
               Container(
                 padding: const EdgeInsets.all(4),
-                child: const Center(child: Text('Warren gives us important tips and tricks to get the most accurate chlorine residual test!')),
+                child: const Center(
+                    child: Text(
+                        'Warren gives us important tips and tricks to get the most accurate chlorine residual test!')),
               ),
             ],
           ), //3
-          const Divider(
-            height: 20,
-            thickness: 2,
-            indent: 20,
-            endIndent: 20,
-          ),
+          const Divider(),
           Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: <Widget>[
@@ -366,7 +734,7 @@ class VideoTab extends StatelessWidget {
                   ),
                   Container(
                     padding: const EdgeInsets.all(4),
-                    child:Icon(Icons.chat_bubble_outline),
+                    child: Icon(Icons.chat_bubble_outline),
                   ),
                   Container(
                     padding: const EdgeInsets.all(4),
@@ -389,16 +757,13 @@ class VideoTab extends StatelessWidget {
               ),
               Container(
                 padding: const EdgeInsets.all(4),
-                child: const Center(child: Text('Coming soon! What is the single best way to upkeep valves? Catch Warren to find out!')),
+                child: const Center(
+                    child: Text(
+                        'Coming soon! What is the single best way to upkeep valves? Catch Warren to find out!')),
               ),
             ],
           ), //4
-          const Divider(
-            height: 20,
-            thickness: 2,
-            indent: 20,
-            endIndent: 20,
-          ),
+          const Divider(),
           Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: <Widget>[
@@ -425,7 +790,7 @@ class VideoTab extends StatelessWidget {
                   ),
                   Container(
                     padding: const EdgeInsets.all(4),
-                    child:Icon(Icons.chat_bubble_outline),
+                    child: Icon(Icons.chat_bubble_outline),
                   ),
                   Container(
                     padding: const EdgeInsets.all(4),
@@ -448,16 +813,13 @@ class VideoTab extends StatelessWidget {
               ),
               Container(
                 padding: const EdgeInsets.all(4),
-                child: const Center(child: Text('What are three important identifications to have on a fire hydrant? Watch to find out!')),
+                child: const Center(
+                    child: Text(
+                        'What are three important identifications to have on a fire hydrant? Watch to find out!')),
               ),
             ],
           ), //5
-          const Divider(
-            height: 20,
-            thickness: 2,
-            indent: 20,
-            endIndent: 20,
-          ),
+          const Divider(),
           Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: <Widget>[
@@ -484,7 +846,7 @@ class VideoTab extends StatelessWidget {
                   ),
                   Container(
                     padding: const EdgeInsets.all(4),
-                    child:Icon(Icons.chat_bubble_outline),
+                    child: Icon(Icons.chat_bubble_outline),
                   ),
                   Container(
                     padding: const EdgeInsets.all(4),
@@ -507,16 +869,13 @@ class VideoTab extends StatelessWidget {
               ),
               Container(
                 padding: const EdgeInsets.all(4),
-                child: const Center(child: Text('Find out how you can clear your intakes without using treated water! Expert water operator Warren Brown, shares with us his knowledge and experience on Backwash Tanks. ')),
+                child: const Center(
+                    child: Text(
+                        'Find out how you can clear your intakes without using treated water! Expert water operator Warren Brown, shares with us his knowledge and experience on Backwash Tanks. ')),
               ),
             ],
           ), //6
-          const Divider(
-            height: 20,
-            thickness: 2,
-            indent: 20,
-            endIndent: 20,
-          ),
+          const Divider(),
           Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: <Widget>[
@@ -543,7 +902,7 @@ class VideoTab extends StatelessWidget {
                   ),
                   Container(
                     padding: const EdgeInsets.all(4),
-                    child:Icon(Icons.chat_bubble_outline),
+                    child: Icon(Icons.chat_bubble_outline),
                   ),
                   Container(
                     padding: const EdgeInsets.all(4),
@@ -566,16 +925,13 @@ class VideoTab extends StatelessWidget {
               ),
               Container(
                 padding: const EdgeInsets.all(4),
-                child: const Center(child: Text('What does food safe grease have to do with maintaining Fire Hydrants? Watch expert operator Warren Brown to find out!')),
+                child: const Center(
+                    child: Text(
+                        'What does food safe grease have to do with maintaining Fire Hydrants? Watch expert operator Warren Brown to find out!')),
               ),
             ],
           ), //7
-          const Divider(
-            height: 20,
-            thickness: 2,
-            indent: 20,
-            endIndent: 20,
-          ),
+          const Divider(),
           Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: <Widget>[
@@ -602,7 +958,7 @@ class VideoTab extends StatelessWidget {
                   ),
                   Container(
                     padding: const EdgeInsets.all(4),
-                    child:Icon(Icons.chat_bubble_outline),
+                    child: Icon(Icons.chat_bubble_outline),
                   ),
                   Container(
                     padding: const EdgeInsets.all(4),
@@ -625,16 +981,13 @@ class VideoTab extends StatelessWidget {
               ),
               Container(
                 padding: const EdgeInsets.all(4),
-                child: const Center(child: Text('Knowledge is Power... literally! Follow Warren as he gives us an inside look into PLCs and teaches us simple troubleshooting techniques.')),
+                child: const Center(
+                    child: Text(
+                        'Knowledge is Power... literally! Follow Warren as he gives us an inside look into PLCs and teaches us simple troubleshooting techniques.')),
               ),
             ],
           ), //8
-          const Divider(
-            height: 20,
-            thickness: 2,
-            indent: 20,
-            endIndent: 20,
-          ),
+          const Divider(),
           Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: <Widget>[
@@ -661,7 +1014,7 @@ class VideoTab extends StatelessWidget {
                   ),
                   Container(
                     padding: const EdgeInsets.all(4),
-                    child:Icon(Icons.chat_bubble_outline),
+                    child: Icon(Icons.chat_bubble_outline),
                   ),
                   Container(
                     padding: const EdgeInsets.all(4),
@@ -684,16 +1037,13 @@ class VideoTab extends StatelessWidget {
               ),
               Container(
                 padding: const EdgeInsets.all(4),
-                child: const Center(child: Text('Coming soon! How can you preserve the strength of chlorine during the disinfection process? Watch Wednesday to find out!')),
+                child: const Center(
+                    child: Text(
+                        'Coming soon! How can you preserve the strength of chlorine during the disinfection process? Watch Wednesday to find out!')),
               ),
             ],
           ), //9
-          const Divider(
-            height: 20,
-            thickness: 2,
-            indent: 20,
-            endIndent: 20,
-          ),
+          const Divider(),
           Container(
             height: 50,
             child: const Center(child: Text('End of videos')),
