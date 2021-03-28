@@ -172,45 +172,525 @@ class VideoTab extends StatelessWidget {
                 ),
               ),
               Container(
-                padding: const EdgeInsets.all(8),
+                padding: const EdgeInsets.all(4),
                 child: new Image.asset('assets/vid1.jpg'),
               ),
-              const Center(child: Text('Video 1')),
+              Row(
+                children: <Widget>[
+                  Container(
+                      padding: const EdgeInsets.all(4),
+                      child: Icon(Icons.favorite_border),
+                  ),
+                  Container(
+                    padding: const EdgeInsets.all(4),
+                    child: Text("1"),
+                  ),
+                  Container(
+                    padding: const EdgeInsets.all(4),
+                    child:Icon(Icons.chat_bubble_outline),
+                  ),
+                  Container(
+                    padding: const EdgeInsets.all(4),
+                    child: Text("0"),
+                  ),
+                  Container(
+                    padding: const EdgeInsets.all(4),
+                    child: Icon(Icons.remove_red_eye_outlined),
+                  ),
+                  Container(
+                    padding: const EdgeInsets.all(4),
+                    child: Text("6"),
+                  ),
+                  Spacer(),
+                  Container(
+                    padding: const EdgeInsets.all(4),
+                    child: Icon(Icons.share),
+                  ),
+                ],
+              ),
+              Container(
+                padding: const EdgeInsets.all(4),
+                child: const Center(child: Text('What does Schmutzdecke mean? How often should we perform a filter scrape? Watch expert Indigenous Water Treatment Operator Warren Brown to find out!')),
+              ),
             ],
+          ), //1
+          const Divider(
+            height: 20,
+            thickness: 2,
+            indent: 20,
+            endIndent: 20,
           ),
           Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: <Widget>[
               const Text(
-                'Slow Sand Filtration & Filter Scrape',
+                'Homemade Water Filter',
                 style: TextStyle(
                   fontSize: 20,
                   fontWeight: FontWeight.bold,
                 ),
               ),
               Container(
-                padding: const EdgeInsets.all(8),
-                child: new Image.asset('assets/vid1.jpg'),
+                padding: const EdgeInsets.all(4),
+                child: new Image.asset('assets/vid2.png'),
               ),
-              const Center(child: Text('Video 1')),
+              Row(
+                children: <Widget>[
+                  Container(
+                    padding: const EdgeInsets.all(4),
+                    child: Icon(Icons.favorite_border),
+                  ),
+                  Container(
+                    padding: const EdgeInsets.all(4),
+                    child: Text("0"),
+                  ),
+                  Container(
+                    padding: const EdgeInsets.all(4),
+                    child:Icon(Icons.chat_bubble_outline),
+                  ),
+                  Container(
+                    padding: const EdgeInsets.all(4),
+                    child: Text("1"),
+                  ),
+                  Container(
+                    padding: const EdgeInsets.all(4),
+                    child: Icon(Icons.remove_red_eye_outlined),
+                  ),
+                  Container(
+                    padding: const EdgeInsets.all(4),
+                    child: Text("14"),
+                  ),
+                  Spacer(),
+                  Container(
+                    padding: const EdgeInsets.all(4),
+                    child: Icon(Icons.share),
+                  ),
+                ],
+              ),
+              Container(
+                padding: const EdgeInsets.all(4),
+                child: const Center(child: Text('Coming soon! Life hacks with Warren! Watch to find out how to make a homemade water filter.')),
+              ),
             ],
+          ), //2
+          const Divider(
+            height: 20,
+            thickness: 2,
+            indent: 20,
+            endIndent: 20,
           ),
           Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: <Widget>[
               const Text(
-                'Slow Sand Filtration & Filter Scrape',
+                'Chlorine Residual Test',
                 style: TextStyle(
                   fontSize: 20,
                   fontWeight: FontWeight.bold,
                 ),
               ),
               Container(
-                padding: const EdgeInsets.all(8),
-                child: new Image.asset('assets/vid1.jpg'),
+                padding: const EdgeInsets.all(4),
+                child: new Image.asset('assets/vid3.jpg'),
               ),
-              const Center(child: Text('Video 1')),
+              Row(
+                children: <Widget>[
+                  Container(
+                    padding: const EdgeInsets.all(4),
+                    child: Icon(Icons.favorite_border),
+                  ),
+                  Container(
+                    padding: const EdgeInsets.all(4),
+                    child: Text("1"),
+                  ),
+                  Container(
+                    padding: const EdgeInsets.all(4),
+                    child:Icon(Icons.chat_bubble_outline),
+                  ),
+                  Container(
+                    padding: const EdgeInsets.all(4),
+                    child: Text("1"),
+                  ),
+                  Container(
+                    padding: const EdgeInsets.all(4),
+                    child: Icon(Icons.remove_red_eye_outlined),
+                  ),
+                  Container(
+                    padding: const EdgeInsets.all(4),
+                    child: Text("14"),
+                  ),
+                  Spacer(),
+                  Container(
+                    padding: const EdgeInsets.all(4),
+                    child: Icon(Icons.share),
+                  ),
+                ],
+              ),
+              Container(
+                padding: const EdgeInsets.all(4),
+                child: const Center(child: Text('Warren gives us important tips and tricks to get the most accurate chlorine residual test!')),
+              ),
             ],
+          ), //3
+          const Divider(
+            height: 20,
+            thickness: 2,
+            indent: 20,
+            endIndent: 20,
+          ),
+          Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: <Widget>[
+              const Text(
+                'Valve Exercising',
+                style: TextStyle(
+                  fontSize: 20,
+                  fontWeight: FontWeight.bold,
+                ),
+              ),
+              Container(
+                padding: const EdgeInsets.all(4),
+                child: new Image.asset('assets/vid4.png'),
+              ),
+              Row(
+                children: <Widget>[
+                  Container(
+                    padding: const EdgeInsets.all(4),
+                    child: Icon(Icons.favorite_border),
+                  ),
+                  Container(
+                    padding: const EdgeInsets.all(4),
+                    child: Text("0"),
+                  ),
+                  Container(
+                    padding: const EdgeInsets.all(4),
+                    child:Icon(Icons.chat_bubble_outline),
+                  ),
+                  Container(
+                    padding: const EdgeInsets.all(4),
+                    child: Text("0"),
+                  ),
+                  Container(
+                    padding: const EdgeInsets.all(4),
+                    child: Icon(Icons.remove_red_eye_outlined),
+                  ),
+                  Container(
+                    padding: const EdgeInsets.all(4),
+                    child: Text("3"),
+                  ),
+                  Spacer(),
+                  Container(
+                    padding: const EdgeInsets.all(4),
+                    child: Icon(Icons.share),
+                  ),
+                ],
+              ),
+              Container(
+                padding: const EdgeInsets.all(4),
+                child: const Center(child: Text('Coming soon! What is the single best way to upkeep valves? Catch Warren to find out!')),
+              ),
+            ],
+          ), //4
+          const Divider(
+            height: 20,
+            thickness: 2,
+            indent: 20,
+            endIndent: 20,
+          ),
+          Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: <Widget>[
+              const Text(
+                'Identifying Fire Hydrants',
+                style: TextStyle(
+                  fontSize: 20,
+                  fontWeight: FontWeight.bold,
+                ),
+              ),
+              Container(
+                padding: const EdgeInsets.all(4),
+                child: new Image.asset('assets/vid5.jpg'),
+              ),
+              Row(
+                children: <Widget>[
+                  Container(
+                    padding: const EdgeInsets.all(4),
+                    child: Icon(Icons.favorite_border),
+                  ),
+                  Container(
+                    padding: const EdgeInsets.all(4),
+                    child: Text("1"),
+                  ),
+                  Container(
+                    padding: const EdgeInsets.all(4),
+                    child:Icon(Icons.chat_bubble_outline),
+                  ),
+                  Container(
+                    padding: const EdgeInsets.all(4),
+                    child: Text("0"),
+                  ),
+                  Container(
+                    padding: const EdgeInsets.all(4),
+                    child: Icon(Icons.remove_red_eye_outlined),
+                  ),
+                  Container(
+                    padding: const EdgeInsets.all(4),
+                    child: Text("3"),
+                  ),
+                  Spacer(),
+                  Container(
+                    padding: const EdgeInsets.all(4),
+                    child: Icon(Icons.share),
+                  ),
+                ],
+              ),
+              Container(
+                padding: const EdgeInsets.all(4),
+                child: const Center(child: Text('What are three important identifications to have on a fire hydrant? Watch to find out!')),
+              ),
+            ],
+          ), //5
+          const Divider(
+            height: 20,
+            thickness: 2,
+            indent: 20,
+            endIndent: 20,
+          ),
+          Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: <Widget>[
+              const Text(
+                'Backwashing',
+                style: TextStyle(
+                  fontSize: 20,
+                  fontWeight: FontWeight.bold,
+                ),
+              ),
+              Container(
+                padding: const EdgeInsets.all(4),
+                child: new Image.asset('assets/vid6.jpg'),
+              ),
+              Row(
+                children: <Widget>[
+                  Container(
+                    padding: const EdgeInsets.all(4),
+                    child: Icon(Icons.favorite_border),
+                  ),
+                  Container(
+                    padding: const EdgeInsets.all(4),
+                    child: Text("2"),
+                  ),
+                  Container(
+                    padding: const EdgeInsets.all(4),
+                    child:Icon(Icons.chat_bubble_outline),
+                  ),
+                  Container(
+                    padding: const EdgeInsets.all(4),
+                    child: Text("0"),
+                  ),
+                  Container(
+                    padding: const EdgeInsets.all(4),
+                    child: Icon(Icons.remove_red_eye_outlined),
+                  ),
+                  Container(
+                    padding: const EdgeInsets.all(4),
+                    child: Text("1"),
+                  ),
+                  Spacer(),
+                  Container(
+                    padding: const EdgeInsets.all(4),
+                    child: Icon(Icons.share),
+                  ),
+                ],
+              ),
+              Container(
+                padding: const EdgeInsets.all(4),
+                child: const Center(child: Text('Find out how you can clear your intakes without using treated water! Expert water operator Warren Brown, shares with us his knowledge and experience on Backwash Tanks. ')),
+              ),
+            ],
+          ), //6
+          const Divider(
+            height: 20,
+            thickness: 2,
+            indent: 20,
+            endIndent: 20,
+          ),
+          Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: <Widget>[
+              const Text(
+                'Fire Hydrant Maintenance',
+                style: TextStyle(
+                  fontSize: 20,
+                  fontWeight: FontWeight.bold,
+                ),
+              ),
+              Container(
+                padding: const EdgeInsets.all(4),
+                child: new Image.asset('assets/vid7.jpg'),
+              ),
+              Row(
+                children: <Widget>[
+                  Container(
+                    padding: const EdgeInsets.all(4),
+                    child: Icon(Icons.favorite_border),
+                  ),
+                  Container(
+                    padding: const EdgeInsets.all(4),
+                    child: Text("0"),
+                  ),
+                  Container(
+                    padding: const EdgeInsets.all(4),
+                    child:Icon(Icons.chat_bubble_outline),
+                  ),
+                  Container(
+                    padding: const EdgeInsets.all(4),
+                    child: Text("0"),
+                  ),
+                  Container(
+                    padding: const EdgeInsets.all(4),
+                    child: Icon(Icons.remove_red_eye_outlined),
+                  ),
+                  Container(
+                    padding: const EdgeInsets.all(4),
+                    child: Text("5"),
+                  ),
+                  Spacer(),
+                  Container(
+                    padding: const EdgeInsets.all(4),
+                    child: Icon(Icons.share),
+                  ),
+                ],
+              ),
+              Container(
+                padding: const EdgeInsets.all(4),
+                child: const Center(child: Text('What does food safe grease have to do with maintaining Fire Hydrants? Watch expert operator Warren Brown to find out!')),
+              ),
+            ],
+          ), //7
+          const Divider(
+            height: 20,
+            thickness: 2,
+            indent: 20,
+            endIndent: 20,
+          ),
+          Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: <Widget>[
+              const Text(
+                'PLCs and Water Treatment',
+                style: TextStyle(
+                  fontSize: 20,
+                  fontWeight: FontWeight.bold,
+                ),
+              ),
+              Container(
+                padding: const EdgeInsets.all(4),
+                child: new Image.asset('assets/vid8.jpg'),
+              ),
+              Row(
+                children: <Widget>[
+                  Container(
+                    padding: const EdgeInsets.all(4),
+                    child: Icon(Icons.favorite_border),
+                  ),
+                  Container(
+                    padding: const EdgeInsets.all(4),
+                    child: Text("0"),
+                  ),
+                  Container(
+                    padding: const EdgeInsets.all(4),
+                    child:Icon(Icons.chat_bubble_outline),
+                  ),
+                  Container(
+                    padding: const EdgeInsets.all(4),
+                    child: Text("0"),
+                  ),
+                  Container(
+                    padding: const EdgeInsets.all(4),
+                    child: Icon(Icons.remove_red_eye_outlined),
+                  ),
+                  Container(
+                    padding: const EdgeInsets.all(4),
+                    child: Text("2"),
+                  ),
+                  Spacer(),
+                  Container(
+                    padding: const EdgeInsets.all(4),
+                    child: Icon(Icons.share),
+                  ),
+                ],
+              ),
+              Container(
+                padding: const EdgeInsets.all(4),
+                child: const Center(child: Text('Knowledge is Power... literally! Follow Warren as he gives us an inside look into PLCs and teaches us simple troubleshooting techniques.')),
+              ),
+            ],
+          ), //8
+          const Divider(
+            height: 20,
+            thickness: 2,
+            indent: 20,
+            endIndent: 20,
+          ),
+          Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: <Widget>[
+              const Text(
+                'Chlorine Disinfection',
+                style: TextStyle(
+                  fontSize: 20,
+                  fontWeight: FontWeight.bold,
+                ),
+              ),
+              Container(
+                padding: const EdgeInsets.all(4),
+                child: new Image.asset('assets/vid9.png'),
+              ),
+              Row(
+                children: <Widget>[
+                  Container(
+                    padding: const EdgeInsets.all(4),
+                    child: Icon(Icons.favorite_border),
+                  ),
+                  Container(
+                    padding: const EdgeInsets.all(4),
+                    child: Text("2"),
+                  ),
+                  Container(
+                    padding: const EdgeInsets.all(4),
+                    child:Icon(Icons.chat_bubble_outline),
+                  ),
+                  Container(
+                    padding: const EdgeInsets.all(4),
+                    child: Text("0"),
+                  ),
+                  Container(
+                    padding: const EdgeInsets.all(4),
+                    child: Icon(Icons.remove_red_eye_outlined),
+                  ),
+                  Container(
+                    padding: const EdgeInsets.all(4),
+                    child: Text("3"),
+                  ),
+                  Spacer(),
+                  Container(
+                    padding: const EdgeInsets.all(4),
+                    child: Icon(Icons.share),
+                  ),
+                ],
+              ),
+              Container(
+                padding: const EdgeInsets.all(4),
+                child: const Center(child: Text('Coming soon! How can you preserve the strength of chlorine during the disinfection process? Watch Wednesday to find out!')),
+              ),
+            ],
+          ), //9
+          const Divider(
+            height: 20,
+            thickness: 2,
+            indent: 20,
+            endIndent: 20,
           ),
           Container(
             height: 50,
