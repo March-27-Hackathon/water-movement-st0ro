@@ -214,7 +214,7 @@ class ForumTabState extends State<ForumTab>
                                         fontWeight: FontWeight.normal)),
                               ]),
                         ),
-                        Text("14 hours ago"),
+                        Text("1 month ago"),
                         Row(
                           children: <Widget>[
                             Container(
@@ -260,7 +260,7 @@ class ForumTabState extends State<ForumTab>
                                         fontWeight: FontWeight.normal)),
                               ]),
                         ),
-                        Text("14 hours ago"),
+                        Text("2 months ago"),
                         Row(
                           children: <Widget>[
                             Container(
@@ -510,20 +510,705 @@ class ForumTabState extends State<ForumTab>
                   ],
                 ),
                 Divider(),
+                Row(
+                  children: [
+                    Container(
+                      padding: const EdgeInsets.all(4),
+                      child:
+                      Image.asset("assets/prof2.jpg", height: 50),
+                    ),
+                    Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        RichText(
+                          text: TextSpan(
+                              text: 'kondwani.asefa',
+                              style: TextStyle(
+                                fontSize: 18,
+                                fontWeight: FontWeight.bold,
+                              ),
+                              children: <TextSpan>[
+                                TextSpan(
+                                  text: " joined the group ",
+                                  style: TextStyle(
+                                      fontWeight: FontWeight.normal),
+                                ),
+                              ]),
+                        ),
+                        Text("3 months ago"),
+                        Row(
+                          children: <Widget>[
+                            Container(
+                              padding: const EdgeInsets.all(4),
+                              child: Icon(Icons.favorite_border),
+                            ),
+                            Container(
+                              padding: const EdgeInsets.all(4),
+                              child: Icon(Icons.chat_bubble_outline),
+                            ),
+                            Container(
+                              padding: const EdgeInsets.all(4),
+                              child: Text("0"),
+                            ),
+                          ],
+                        ),
+                      ],
+                    ),
+                  ],
+                ),
+                Divider(),
+                Row(
+                  children: [
+                    Container(
+                      padding: const EdgeInsets.all(4),
+                      child:
+                      Image.asset("assets/prof2.jpg", height: 50),
+                    ),
+                    Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        RichText(
+                          text: TextSpan(
+                              text: 'bmalekia',
+                              style: TextStyle(
+                                fontSize: 18,
+                                fontWeight: FontWeight.bold,
+                              ),
+                              children: <TextSpan>[
+                                TextSpan(
+                                  text: " changed the group description ",
+                                  style: TextStyle(
+                                      fontWeight: FontWeight.normal),
+                                ),
+                              ]),
+                        ),
+                        Text("3 months ago"),
+                        Text("Being a water operator can be challenging, new\nissues arise everyday and we may not don't know\nall the answers. This space allows operators across\nCanada to connect, ask questions and share\nknowledge. "),
+                        Row(
+                          children: <Widget>[
+                            Container(
+                              padding: const EdgeInsets.all(4),
+                              child: Icon(Icons.favorite_border),
+                            ),
+                            Container(
+                              padding: const EdgeInsets.all(4),
+                              child: Icon(Icons.chat_bubble_outline),
+                            ),
+                            Container(
+                              padding: const EdgeInsets.all(4),
+                              child: Text("0"),
+                            ),
+                          ],
+                        ),
+                      ],
+                    ),
+                  ],
+                ),
+                Divider(),
+                Row(
+                  children: [
+                    Container(
+                      padding: const EdgeInsets.all(4),
+                      child:
+                      Image.asset("assets/prof2.jpg", height: 50),
+                    ),
+                    Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        RichText(
+                          text: TextSpan(
+                              text: 'bmalekia',
+                              style: TextStyle(
+                                fontSize: 18,
+                                fontWeight: FontWeight.bold,
+                              ),
+                          ),
+                        ),
+                        Text("3 months ago"),
+                        Text("Welcome to the group! You can connect with other\nmembers, get updates and share photos."),
+                        Row(
+                          children: <Widget>[
+                            Container(
+                              padding: const EdgeInsets.all(4),
+                              child: Icon(Icons.favorite_border),
+                            ),
+                            Container(
+                              padding: const EdgeInsets.all(4),
+                              child: Icon(Icons.chat_bubble_outline),
+                            ),
+                            Container(
+                              padding: const EdgeInsets.all(4),
+                              child: Text("0"),
+                            ),
+                          ],
+                        ),
+                      ],
+                    ),
+                  ],
+                ),
+                Divider(),
               ],
             ),
             ListView(
               padding: const EdgeInsets.all(12),
               children: [
-                Text("uwu"),
-                Text("text"),
+                Row(
+                  children: [
+                    Container(
+                      alignment: Alignment.topCenter,
+                      padding: const EdgeInsets.all(4),
+                      child:
+                      Image.asset("assets/prof4.jpg", height: 50),
+                    ),
+                    Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        RichText(
+                          text: TextSpan(
+                              text: 'Scott Quilty',
+                              style: TextStyle(
+                                fontSize: 18,
+                                fontWeight: FontWeight.bold,
+                              ),
+                              children: <TextSpan>[
+                                TextSpan(
+                                    text: " joined the group.",
+                                    style: TextStyle(
+                                        fontWeight: FontWeight.normal)),
+                              ]),
+                        ),
+                        Text("9 days ago"),
+                        Row(
+                          children: <Widget>[
+                            Container(
+                              padding: const EdgeInsets.all(4),
+                              child: Icon(Icons.favorite_border),
+                            ),
+                            Container(
+                              padding: const EdgeInsets.all(4),
+                              child: Icon(Icons.chat_bubble_outline),
+                            ),
+                            Container(
+                              padding: const EdgeInsets.all(4),
+                              child: Text("0"),
+                            ),
+                          ],
+                        ),
+                      ],
+                    ),
+                  ],
+                ),
+                Divider(),
+                Row(
+                  children: [
+                    Container(
+                      padding: const EdgeInsets.all(4),
+                      child:
+                      Image.asset("assets/prof3.jpg", height: 50),
+                    ),
+                    Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        RichText(
+                          text: TextSpan(
+                              text: 'kondwani.asefa',
+                              style: TextStyle(
+                                fontSize: 18,
+                                fontWeight: FontWeight.bold,
+                              ),
+                              children: <TextSpan>[
+                                TextSpan(
+                                    text: " joined the group.",
+                                    style: TextStyle(
+                                        fontWeight: FontWeight.normal)),
+                              ]),
+                        ),
+                        Text("2 months ago"),
+                        Row(
+                          children: <Widget>[
+                            Container(
+                              padding: const EdgeInsets.all(4),
+                              child: Icon(Icons.favorite_border),
+                            ),
+                            Container(
+                              padding: const EdgeInsets.all(4),
+                              child: Icon(Icons.chat_bubble_outline),
+                            ),
+                            Container(
+                              padding: const EdgeInsets.all(4),
+                              child: Text("0"),
+                            ),
+                          ],
+                        ),
+                      ],
+                    ),
+                  ],
+                ),
+                Divider(),
+                Row(
+                  children: [
+                    Container(
+                      padding: const EdgeInsets.all(4),
+                      child:
+                      Image.asset("assets/prof2.jpg", height: 50),
+                    ),
+                    Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        RichText(
+                          text: TextSpan(
+                              text: 'kenward13',
+                              style: TextStyle(
+                                fontSize: 18,
+                                fontWeight: FontWeight.bold,
+                              ),
+                              children: <TextSpan>[
+                                TextSpan(
+                                  text: " joined the group ",
+                                  style: TextStyle(
+                                      fontWeight: FontWeight.normal),
+                                ),
+                              ]),
+                        ),
+                        Text("2 months ago"),
+                        Row(
+                          children: <Widget>[
+                            Container(
+                              padding: const EdgeInsets.all(4),
+                              child: Icon(Icons.favorite_border),
+                            ),
+                            Container(
+                              padding: const EdgeInsets.all(4),
+                              child: Icon(Icons.chat_bubble_outline),
+                            ),
+                            Container(
+                              padding: const EdgeInsets.all(4),
+                              child: Text("1"),
+                            ),
+                          ],
+                        ),
+                      ],
+                    ),
+                  ],
+                ),
+                Divider(),
+                Row(
+                  children: [
+                    Container(
+                      padding: const EdgeInsets.all(4),
+                      child:
+                      Image.asset("assets/prof2.jpg", height: 50),
+                    ),
+                    Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        RichText(
+                          text: TextSpan(
+                              text: 'saba.bhatti3',
+                              style: TextStyle(
+                                fontSize: 18,
+                                fontWeight: FontWeight.bold,
+                              ),
+                              children: <TextSpan>[
+                                TextSpan(
+                                  text: " joined the group ",
+                                  style: TextStyle(
+                                      fontWeight: FontWeight.normal),
+                                ),
+                              ]),
+                        ),
+                        Text("3 months ago"),
+                        Row(
+                          children: <Widget>[
+                            Container(
+                              padding: const EdgeInsets.all(4),
+                              child: Icon(Icons.favorite_border),
+                            ),
+                            Container(
+                              padding: const EdgeInsets.all(4),
+                              child: Icon(Icons.chat_bubble_outline),
+                            ),
+                            Container(
+                              padding: const EdgeInsets.all(4),
+                              child: Text("0"),
+                            ),
+                          ],
+                        ),
+                      ],
+                    ),
+                  ],
+                ),
+                Divider(),
+                Row(
+                  children: [
+                    Container(
+                      padding: const EdgeInsets.all(4),
+                      child:
+                      Image.asset("assets/prof2.jpg", height: 50),
+                    ),
+                    Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        RichText(
+                          text: TextSpan(
+                              text: 'kondwani.asefa',
+                              style: TextStyle(
+                                fontSize: 18,
+                                fontWeight: FontWeight.bold,
+                              ),
+                              children: <TextSpan>[
+                                TextSpan(
+                                    text: " joined the group.",
+                                    style: TextStyle(
+                                        fontWeight: FontWeight.normal)),
+                              ]),
+                        ),
+                        Text("3 months ago"),
+                        Row(
+                          children: <Widget>[
+                            Container(
+                              padding: const EdgeInsets.all(4),
+                              child: Icon(Icons.favorite_border),
+                            ),
+                            Container(
+                              padding: const EdgeInsets.all(4),
+                              child: Icon(Icons.chat_bubble_outline),
+                            ),
+                            Container(
+                              padding: const EdgeInsets.all(4),
+                              child: Text("0"),
+                            ),
+                          ],
+                        ),
+                      ],
+                    ),
+                  ],
+                ),
+                Divider(),
+                Row(
+                  children: [
+                    Container(
+                      padding: const EdgeInsets.all(4),
+                      child:
+                      Image.asset("assets/prof2.jpg", height: 50),
+                    ),
+                    Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        RichText(
+                          text: TextSpan(
+                              text: 'bmalekia',
+                              style: TextStyle(
+                                fontSize: 18,
+                                fontWeight: FontWeight.bold,
+                              ),
+                              children: <TextSpan>[
+                                TextSpan(
+                                  text: " changed the group description ",
+                                  style: TextStyle(
+                                      fontWeight: FontWeight.normal),
+                                ),
+                              ]),
+                        ),
+                        Text("3 months ago"),
+                        Text("As Water Operators, everyday we learn something\nnew, encounter a unique problem and find better\nways of solving challenges. Share your lessons\nlearned with Indigenous Water Operators across\nCanada."),
+                        Row(
+                          children: <Widget>[
+                            Container(
+                              padding: const EdgeInsets.all(4),
+                              child: Icon(Icons.favorite_border),
+                            ),
+                            Container(
+                              padding: const EdgeInsets.all(4),
+                              child: Icon(Icons.chat_bubble_outline),
+                            ),
+                            Container(
+                              padding: const EdgeInsets.all(4),
+                              child: Text("0"),
+                            ),
+                          ],
+                        ),
+                      ],
+                    ),
+                  ],
+                ),
+                Divider(),
+                Row(
+                  children: [
+                    Container(
+                      padding: const EdgeInsets.all(4),
+                      child:
+                      Image.asset("assets/prof2.jpg", height: 50),
+                    ),
+                    Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        RichText(
+                          text: TextSpan(
+                            text: 'bmalekia',
+                            style: TextStyle(
+                              fontSize: 18,
+                              fontWeight: FontWeight.bold,
+                            ),
+                          ),
+                        ),
+                        Text("3 months ago"),
+                        Text("Welcome to the group! You can connect with other\nmembers, get updates and share photos."),
+                        Row(
+                          children: <Widget>[
+                            Container(
+                              padding: const EdgeInsets.all(4),
+                              child: Icon(Icons.favorite_border),
+                            ),
+                            Container(
+                              padding: const EdgeInsets.all(4),
+                              child: Icon(Icons.chat_bubble_outline),
+                            ),
+                            Container(
+                              padding: const EdgeInsets.all(4),
+                              child: Text("0"),
+                            ),
+                          ],
+                        ),
+                      ],
+                    ),
+                  ],
+                ),
+                Divider(),
               ],
             ),
             ListView(
               padding: const EdgeInsets.all(12),
               children: [
-                Text("uwu"),
-                Text("text"),
+                Row(
+                  children: [
+                    Container(
+                      padding: const EdgeInsets.all(4),
+                      child:
+                      Image.asset("assets/prof3.jpg", height: 50),
+                    ),
+                    Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        RichText(
+                          text: TextSpan(
+                              text: 'kondwani.asefa',
+                              style: TextStyle(
+                                fontSize: 18,
+                                fontWeight: FontWeight.bold,
+                              ),
+                              children: <TextSpan>[
+                                TextSpan(
+                                    text: " joined the group.",
+                                    style: TextStyle(
+                                        fontWeight: FontWeight.normal)),
+                              ]),
+                        ),
+                        Text("2 months ago"),
+                        Row(
+                          children: <Widget>[
+                            Container(
+                              padding: const EdgeInsets.all(4),
+                              child: Icon(Icons.favorite_border),
+                            ),
+                            Container(
+                              padding: const EdgeInsets.all(4),
+                              child: Icon(Icons.chat_bubble_outline),
+                            ),
+                            Container(
+                              padding: const EdgeInsets.all(4),
+                              child: Text("0"),
+                            ),
+                          ],
+                        ),
+                      ],
+                    ),
+                  ],
+                ),
+                Divider(),
+                Row(
+                  children: [
+                    Container(
+                      padding: const EdgeInsets.all(4),
+                      child:
+                      Image.asset("assets/prof2.jpg", height: 50),
+                    ),
+                    Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        RichText(
+                          text: TextSpan(
+                              text: 'saba.bhatti3',
+                              style: TextStyle(
+                                fontSize: 18,
+                                fontWeight: FontWeight.bold,
+                              ),
+                              children: <TextSpan>[
+                                TextSpan(
+                                  text: " joined the group ",
+                                  style: TextStyle(
+                                      fontWeight: FontWeight.normal),
+                                ),
+                              ]),
+                        ),
+                        Text("3 months ago"),
+                        Row(
+                          children: <Widget>[
+                            Container(
+                              padding: const EdgeInsets.all(4),
+                              child: Icon(Icons.favorite_border),
+                            ),
+                            Container(
+                              padding: const EdgeInsets.all(4),
+                              child: Icon(Icons.chat_bubble_outline),
+                            ),
+                            Container(
+                              padding: const EdgeInsets.all(4),
+                              child: Text("0"),
+                            ),
+                          ],
+                        ),
+                      ],
+                    ),
+                  ],
+                ),
+                Divider(),
+                Row(
+                  children: [
+                    Container(
+                      padding: const EdgeInsets.all(4),
+                      child:
+                      Image.asset("assets/prof2.jpg", height: 50),
+                    ),
+                    Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        RichText(
+                          text: TextSpan(
+                              text: 'kondwani.asefa',
+                              style: TextStyle(
+                                fontSize: 18,
+                                fontWeight: FontWeight.bold,
+                              ),
+                              children: <TextSpan>[
+                                TextSpan(
+                                    text: " joined the group.",
+                                    style: TextStyle(
+                                        fontWeight: FontWeight.normal)),
+                              ]),
+                        ),
+                        Text("3 months ago"),
+                        Row(
+                          children: <Widget>[
+                            Container(
+                              padding: const EdgeInsets.all(4),
+                              child: Icon(Icons.favorite_border),
+                            ),
+                            Container(
+                              padding: const EdgeInsets.all(4),
+                              child: Icon(Icons.chat_bubble_outline),
+                            ),
+                            Container(
+                              padding: const EdgeInsets.all(4),
+                              child: Text("0"),
+                            ),
+                          ],
+                        ),
+                      ],
+                    ),
+                  ],
+                ),
+                Divider(),
+                Row(
+                  children: [
+                    Container(
+                      padding: const EdgeInsets.all(4),
+                      child:
+                      Image.asset("assets/prof2.jpg", height: 50),
+                    ),
+                    Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        RichText(
+                          text: TextSpan(
+                              text: 'bmalekia',
+                              style: TextStyle(
+                                fontSize: 18,
+                                fontWeight: FontWeight.bold,
+                              ),
+                              children: <TextSpan>[
+                                TextSpan(
+                                  text: " changed the group description ",
+                                  style: TextStyle(
+                                      fontWeight: FontWeight.normal),
+                                ),
+                              ]),
+                        ),
+                        Text("3 months ago"),
+                        Text("Water Operators are essential workers. Take a\nmoment to spotlight a water operator who excels\nin your community."),
+                        Row(
+                          children: <Widget>[
+                            Container(
+                              padding: const EdgeInsets.all(4),
+                              child: Icon(Icons.favorite_border),
+                            ),
+                            Container(
+                              padding: const EdgeInsets.all(4),
+                              child: Icon(Icons.chat_bubble_outline),
+                            ),
+                            Container(
+                              padding: const EdgeInsets.all(4),
+                              child: Text("0"),
+                            ),
+                          ],
+                        ),
+                      ],
+                    ),
+                  ],
+                ),
+                Divider(),
+                Row(
+                  children: [
+                    Container(
+                      padding: const EdgeInsets.all(4),
+                      child:
+                      Image.asset("assets/prof2.jpg", height: 50),
+                    ),
+                    Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        RichText(
+                          text: TextSpan(
+                            text: 'bmalekia',
+                            style: TextStyle(
+                              fontSize: 18,
+                              fontWeight: FontWeight.bold,
+                            ),
+                          ),
+                        ),
+                        Text("3 months ago"),
+                        Text("Welcome to the group! You can connect with other\nmembers, get updates and share photos."),
+                        Row(
+                          children: <Widget>[
+                            Container(
+                              padding: const EdgeInsets.all(4),
+                              child: Icon(Icons.favorite_border),
+                            ),
+                            Container(
+                              padding: const EdgeInsets.all(4),
+                              child: Icon(Icons.chat_bubble_outline),
+                            ),
+                            Container(
+                              padding: const EdgeInsets.all(4),
+                              child: Text("0"),
+                            ),
+                          ],
+                        ),
+                      ],
+                    ),
+                  ],
+                ),
+                Divider(),
               ],
             ),
           ],
