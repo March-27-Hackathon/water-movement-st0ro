@@ -1,5 +1,6 @@
 import 'dart:ui';
 
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:url_launcher/url_launcher.dart';
 
@@ -120,9 +121,15 @@ class ForumTabState extends State<ForumTab>
 
   @override
   Widget build(BuildContext context) {
+
     return DefaultTabController(
       length: 3,
+
       child: Scaffold(
+          floatingActionButton: FloatingActionButton(
+            child: Icon(Icons.add),
+                onPressed: (){},
+          ),
         appBar: PreferredSize(
           preferredSize: Size.fromHeight(kToolbarHeight),
           child: Container(
@@ -139,11 +146,14 @@ class ForumTabState extends State<ForumTab>
             ),
           ),
         ),
+
         body: TabBarView(
           children: [
             ListView(
+
               padding: const EdgeInsets.all(12),
               children: [
+
                 Row(
                   children: [
                     Container(
@@ -1222,8 +1232,11 @@ class VideoTab extends StatelessWidget {
                 ),
               ),
               Container(
-                padding: const EdgeInsets.all(4),
-                child: new Image.asset('assets/vid1.jpg'),
+                child: InkWell(
+                  child: //padding: const EdgeInsets.all(4),
+                    new Image.asset('assets/vid1.jpg'),
+                    onTap: () => launch('https://www.youtube.com/watch?v=sR-j9J02Vgg&t=2s&ab_channel=WaterMovement')
+                ),
               ),
               Row(
                 children: <Widget>[
@@ -2054,7 +2067,7 @@ class AboutTab extends StatelessWidget {
                 ),
               ),
               Container(
-                padding: const EdgeInsets.all(4),
+                padding: const EdgeInsets.fromLTRB(4, 20, 4, 4),
                 child: Center(
                   child: Text(
                     'Contact Us',
@@ -2072,11 +2085,128 @@ class AboutTab extends StatelessWidget {
                 child: Center(
                   child: new InkWell(
                     child: new Text('watermovementyyc@gmail.com'),
-                        onTap: () => launch('youtube.com')
+                        onTap: () => launch('mailto:watermovementyyc@gmail.com')
                   ),
                 ),
               ),
+
+              Container(
+                padding: const EdgeInsets.fromLTRB(30,12, 30, 12),
+                child: Center(
+                  child: new TextFormField(
+                    decoration: InputDecoration(labelText: 'First Name'),
+                  ),
+                ),
+              ),
+
+              Container(
+                padding: const EdgeInsets.fromLTRB(30,12, 30, 12),
+                child: Center(
+                  child: new TextFormField(
+                    decoration: InputDecoration(labelText: 'Last Name'),
+                  ),
+                ),
+              ),
+
+              Container(
+                padding: const EdgeInsets.fromLTRB(30,12, 30, 12),
+                child: Center(
+                  child: new TextFormField(
+                    decoration: InputDecoration(labelText: 'Email*'),
+                  ),
+                ),
+              ),
+
+              Container(
+                padding: const EdgeInsets.fromLTRB(30,12, 30, 12),
+                child: Center(
+                  child: new TextFormField(
+                    decoration: InputDecoration(labelText: 'Subject'),
+                  ),
+                ),
+              ),
+
+              Container(
+                padding: const EdgeInsets.fromLTRB(30,5, 30, 12),
+                child: Center(
+                  child: new TextFormField(
+                    textAlignVertical: TextAlignVertical.top,
+                    decoration: InputDecoration(labelText: 'Leave us a message...',
+                    ),
+                    maxLines: 2
+                  ),
+                ),
+              ),
+
+
+              Container(padding: const EdgeInsets.fromLTRB(225, 10, 10, 10),
+    child: RaisedButton(
+    onPressed: () {},
+    textColor: Colors.white,
+
+    child: Container(
+    padding: const EdgeInsets.all(15.0),
+    child: const Text('Submit'),
+    ),
+    ),
+              ),
             ],
+          ),
+        ],
+      ),
+    );
+  }
+}
+
+// Create a Form widget.
+class MyCustomForm extends StatefulWidget {
+  @override
+  MyCustomFormState createState() {
+    return MyCustomFormState();
+  }
+}
+
+// Create a corresponding State class.
+// This class holds data related to the form.
+class MyCustomFormState extends State<MyCustomForm> {
+  // Create a global key that uniquely identifies the Form widget
+  // and allows validation of the form.
+  //
+  // Note: This is a GlobalKey<FormState>,
+  // not a GlobalKey<MyCustomFormState>.
+  final _formKey = GlobalKey<FormState>();
+
+  @override
+  Widget build(BuildContext context) {
+    // Build a Form widget using the _formKey created above.
+    return Form(
+      key: _formKey,
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: <Widget>[
+          TextFormField(
+            // The validator receives the text that the user has entered.
+            validator: (value) {
+              if (value == null || value.isEmpty) {
+                return 'Please enter some text';
+              }
+              return null;
+            },
+          ),
+          Padding(
+            padding: const EdgeInsets.symmetric(vertical: 16.0),
+            child: ElevatedButton(
+              onPressed: () {
+                // Validate returns true if the form is valid, or false otherwise.
+                if (!_formKey.currentState.validate()) {
+                  // If the form is valid, display a snackbar. In the real world,
+                  // you'd often call a server or save the information in a database.
+                  ScaffoldMessenger.of(context)
+                      .showSnackBar(SnackBar(content: Text('Processing Data')));
+                }
+              },
+              child: Text('Submit'),
+            ),
           ),
         ],
       ),
